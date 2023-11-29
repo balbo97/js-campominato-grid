@@ -19,6 +19,7 @@ let grid = document.getElementById('grid');
 //FACCIO IN MODO CHE QUANDO CLICCO SUL BUTTON NEL HTML LA MIA FUNZIONE VENGA MESSA IN ATTO 
 button_play.addEventListener('click', function(){
     console.log('well done ')
+
     
     //CREO UN CICLO FOR
     for (let i=0; i<100; i++){
@@ -32,6 +33,7 @@ button_play.addEventListener('click', function(){
         // QUANDO L'UTENTE CLICCA SULLO SQUARE QUELLO CAMBIA COLORE 
         square.addEventListener('click', function(){
             this.classList.toggle('clicked')
+            console.log(i+1)
         })
     } 
 })
