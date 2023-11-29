@@ -10,6 +10,7 @@ body{
 
 #grid{
     width: 1000px;
+    flex-wrap: wrap;
 }
 
 .square{
@@ -17,4 +18,7 @@ body{
     height: 100px;
     background-color: aquamarine;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
