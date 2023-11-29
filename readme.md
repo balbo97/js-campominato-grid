@@ -27,3 +27,4 @@ Buon lavoro, a domani!
 2- creo una funzione che mi generi la singola casella della griglia 
 3- recupero l'elemento in grado di generarmi la singola casella 
 4- utilizzo un FOR che ripeta l'elemento tante volte quante me ne occorrono 
+
