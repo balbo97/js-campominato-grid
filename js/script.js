@@ -22,9 +22,16 @@ button_play.addEventListener('click', function(){
     
     //CREO UN CICLO FOR
     for (let i=0; i<100; i++){
-        
+
+        // CREO LO SQUARE 
         let square = createCell(i+1);
-        
+
+        // APPENDO LO SQUARE ALLA GRID 
         grid.appendChild(square)
+
+        // QUANDO L'UTENTE CLICCA SULLO SQUARE QUELLO CAMBIA COLORE 
+        square.addEventListener('click', function(){
+            this.classList.toggle('clicked')
+        })
     } 
 })
