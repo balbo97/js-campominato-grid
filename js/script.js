@@ -1,15 +1,16 @@
 // CREO UNA VARIABILE A CUI ASSOCIO UN ELEMENTO NELL HTML 
 const button_play = document.getElementById('play');
 
-//  creo una funzione che mi generi la singola casella della griglia 
-function createCell(x, y){
-    
+// CREO UNA FUNZIONE CHE MI GENERI LA SINGOLA CASELLA DELLA GRIGLIA E LA GRIGLIA STESSA 
+function createGrid(x, y){
+    // dove x ed y, in questo caso, rappresentano corrispettivamente il numero di quadrati e quadrati per lato
+
     // CREO LA SINGOLA CASELLA 
     const cell = document.createElement('div');
     cell.classList.add('square') 
 
     // STABILISCO LA LUNGHEZZA DI UN LATO DELLA CELLA IN BASE ALL 100 DELLA VIEWPORT DIVISO IL NUMERO DI CELLE CHE VOGLIO SU UN LATO 
-    let z = `calc(100vw / ${y})`
+    let z = `calc(100vw / ${y} - 10px)`
     // imposto altezza e larghezza dello square utilizzando la z 
     cell.style.width = z
     cell.style.height = z
@@ -60,7 +61,7 @@ button_play.addEventListener('click', function(){
     for (let i=0; i<x; i++){
 
         // CREO LO SQUARE 
-        let square = createCell(i+1, y+1);
+        let square = createGrid(i+1, y);
 
         // APPENDO LO SQUARE ALLA GRID 
         grid.appendChild(square)
